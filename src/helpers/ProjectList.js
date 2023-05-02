@@ -26,6 +26,6 @@ export const ProjectList = [
     name: "Web3 NFT mint page",
     image: Proj4,
     skills: "Three JS, React, TailwindCSS, Web3, Hardhat, Ethers.js",
-    link: "https://dbrolinconsulting.com/Start"
+    link: "https://dbrolinconsulting.com/artproject/"
   },
 ];
