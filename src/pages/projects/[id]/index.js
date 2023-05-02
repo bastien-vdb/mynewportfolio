@@ -13,7 +13,7 @@ function ProjectDisplay() {
     <div className="project">
       <h1> {project?.name}</h1>
       <Image className="" src={project?.image} height={1651} width={957} alt={project?.name} />
-      <Link className="text-4xl text-blue-950 py-6 hover:text-sky-800 hover:text-3xl duration-700 font-bold" href={project.link ? project.link : ''}>See more ...</Link>
+      <Link className="text-4xl text-blue-950 py-6 hover:text-sky-800 hover:text-3xl duration-700 font-bold" href={project?.link ? project?.link : ''}>See more ...</Link>
       <p>
         <b>Skills:</b> {project?.skills}
       </p>
