@@ -1,6 +1,20 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 
+import '@/styles/Home.css';
+import Navbar from '@/components/Navbar';
+import "@/styles/Navbar.css";
+import "@/styles/Projects.css";
+import Footer from '@/components/Footer';
+import "@/styles/Footer.css";
+import "@/styles/ProjectDisplay.css";
+
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <div>
+      <Navbar />
+      <Component {...pageProps} />
+      <Footer />
+    </div>
+  )
 }
