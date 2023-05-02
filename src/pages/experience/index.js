@@ -39,7 +39,7 @@ function Experience() {
         >
           <h3 className="vertical-timeline-element-title">Team lead - Accenture</h3>
           <h4 className="vertical-timeline-element-subtitle">GDF Suez for 6 months as Developper</h4>
-          <h4 className="vertical-timeline-element-subtitle">L'Oreal for 4 years as Team Lead</h4>
+          <h4 className="vertical-timeline-element-subtitle">{`L'Oreal for 4 years as Team Lead`}</h4>
           <h4 className="vertical-timeline-element-subtitle">Safran Snecma for 1 year as consultant</h4>
           
           <p>Developed and manage Sap fullstack project in 3 CAC40 french companies</p>
