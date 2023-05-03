@@ -10,10 +10,10 @@ function HomePage() {
     return (
         <div className="home">
             <div className="about space-y-10">
-                <Image className="shadow-2xl shadow-yellow-100 rounded-full" src={profilePicture} alt="Profile Picture" width={200} height={200} />
+                <Image className="shadow-2xl shadow-yellow-100 rounded-full w-40" src={profilePicture} alt="Profile Picture" width={200} height={200} />
                 <h2> Hi, I am Bastien</h2>
                 <div className="prompt space-y-10">
-                    <p className="text-4xl">A french software developer with a passion for learning and creating.</p>
+                    <p>A french software developer with a passion for learning and creating.</p>
                     <div className="flex items-center justify-center">
                         <Link href="https://fr.linkedin.com/in/bastien-vermot-de-boisrolin-10051a72" passHref={true} target="_blank" rel="noopener noreferrer" className="hover:scale-110 duration-300">
                             <LinkedInIcon />

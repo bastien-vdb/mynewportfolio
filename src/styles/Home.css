@@ -17,9 +17,13 @@
   color: #f0f0f0;
 }
 
+.about p {
+  font-size: 30px;
+}
+
 .about h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   color: #e9d35b;
 }
@@ -29,7 +33,7 @@
   font-size: 30px;
 }
 .prompt svg {
-  font-size: 60px;
+  font-size: 40px;
   margin: 5px;
   color: white;
 }
