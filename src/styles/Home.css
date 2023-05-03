@@ -2,7 +2,7 @@
   width: 100%;
   align-items: center;
   font-family: "Arial", sans-serif;
-  color: #3e497a;
+  color: #2980b9;
 }
 
 .about {
@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #21325e;
+  background-color: #3498db;
   color: #f0f0f0;
 }
 
@@ -44,9 +44,9 @@
 }
 
 .skills h1 {
-  color: #3e497a;
   font-weight: bold;
   font-size: 2em;
+  text-decoration: underline;
 }
 
 .skills h2 {

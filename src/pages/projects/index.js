@@ -5,7 +5,6 @@ import { ProjectList } from "../../helpers/ProjectList";
 function Projects() {
   return (
     <div className="projects">
-      <h1 className="text-5xl"> My projects</h1>
       <div className="projectList">
         {ProjectList.map((project, idx) => {
           return (
