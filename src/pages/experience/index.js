@@ -7,11 +7,11 @@ import WorkIcon from "@material-ui/icons/Work";
 function Experience() {
   return (
     <div className="experience">
-      <VerticalTimeline lineColor="#3e497a">
+      <VerticalTimeline lineColor="#2980b9">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2005 - 2008"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          iconStyle={{ background: "#2980b9", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -22,7 +22,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2008 - 2013"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          iconStyle={{ background: "#2980b9", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">Computer Engineering at Supinfo Paris</h3>
@@ -34,7 +34,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2014 - 2020"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          iconStyle={{ background: "#f1c40f", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">Team lead - Accenture</h3>
@@ -48,7 +48,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2020 - present"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          iconStyle={{ background: "#f1c40f", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">React/Next developper - Freelance</h3>

@@ -10,6 +10,7 @@ function Navbar() {
   return (
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
       <div className="toggleButton">
+        <Image className="shadow-yellow-100 rounded-full w-14" src={profilePicture} alt="Profile Picture" width={100} height={100} />
         <button
           onClick={() => {
             setExpandNavbar((prev) => !prev);
@@ -18,18 +19,18 @@ function Navbar() {
           <ReorderIcon />
         </button>
       </div>
-      <div className="flex justify-center items-center px-6">
-        <Link href={"/"}>
+      <div className="flex flex-col justify-center items-center sm:flex-row sm:justify-start sm:items-start px-6">
+        <Link className="hidden sm:block" href={"/"}>
           <Image className="shadow-yellow-100 rounded-full w-14" src={profilePicture} alt="Profile Picture" width={200} height={200} />
         </Link>
         <div className="links">
-          <Link className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-4" href="/">
+          <Link className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/">
             Home
           </Link>
-          <Link className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-4" href="/projects">
+          <Link className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/projects">
             Projects
           </Link>
-          <Link className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-4" href="/experience">
+          <Link className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/experience">
             Experience
           </Link>
         </div>
