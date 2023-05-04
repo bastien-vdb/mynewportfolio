@@ -24,13 +24,13 @@ function Navbar() {
           <Image className="shadow-yellow-100 rounded-full w-14" src={profilePicture} alt="Profile Picture" width={200} height={200} />
         </Link>
         <div className="links">
-          <Link className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/">
+          <Link onClick={()=>setExpandNavbar(()=>false)} className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/">
             Home
           </Link>
-          <Link className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/projects">
+          <Link onClick={()=>setExpandNavbar(()=>false)} className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/projects">
             Projects
           </Link>
-          <Link className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/experience">
+          <Link onClick={()=>setExpandNavbar(()=>false)} className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/experience">
             Experience
           </Link>
         </div>

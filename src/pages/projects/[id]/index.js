@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import { ProjectList } from "../../../helpers/ProjectList";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -17,7 +18,9 @@ function ProjectDisplay() {
       <p>
         <b>Skills:</b> {project?.skills}
       </p>
+      <Link href={project.git} target="_blank">
       <GitHubIcon />
+      </Link>
     </div>
   );
 }

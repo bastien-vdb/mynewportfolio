@@ -30,7 +30,7 @@ function HomePage() {
             <div className="about space-y-10">
                 <button onClick={() => setShow(value => !value)} className={`absolute bottom-2 right-10 bg-[#f1c40f] font-bold text-[#3498db] hover:scale-110 duration-300 ${show ? 'block' : 'hidden'} p-3 rounded-lg`}>
                     <Link href="/projects">
-                        Go to my Projects
+                        My Projects
                     </Link>
                 </button>
                 <Image className="shadow-2xl shadow-yellow-100 rounded-full w-40" src={profilePicture} alt="Profile Picture" width={200} height={200} />
