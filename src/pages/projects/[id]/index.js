@@ -1,4 +1,3 @@
-'use client';
 import React from "react";
 import { ProjectList } from "../../../helpers/ProjectList";
 import GitHubIcon from "@material-ui/icons/GitHub";
