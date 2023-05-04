@@ -7,32 +7,9 @@ import profilePicture from "/src/assets/profile.jpg";
 import Link from "next/link";
 
 function HomePage() {
-
-    const [show, setShow] = React.useState(true);
-
-    useEffect(() => {
-
-        window.addEventListener('scroll', () => {
-            let scrollFromTheTop = window.scrollY;
-            console.log(scrollFromTheTop)
-            if (scrollFromTheTop > 100) {
-                setShow(true);
-            } else {
-                setShow(false);
-            }
-        });
-
-    }, []);
-
-
     return (
         <div className="home">
             <div className="about space-y-10">
-                <button onClick={() => setShow(value => !value)} className={`absolute bottom-2 right-10 bg-[#f1c40f] font-bold text-[#3498db] hover:scale-110 duration-300 ${show ? 'block' : 'hidden'} p-3 rounded-lg`}>
-                    <Link href="/projects">
-                        My Projects
-                    </Link>
-                </button>
                 <Image className="shadow-2xl shadow-yellow-100 rounded-full w-40" src={profilePicture} alt="Profile Picture" width={200} height={200} />
                 <h2> Hi, I am Bastien</h2>
                 <div className="prompt space-y-10">
@@ -70,6 +47,11 @@ function HomePage() {
                         <span>TypeScript, JavaScript, Python, ABAP</span>
                     </li>
                 </ol>
+                <button className={`bg-[#f1c40f] font-bold text-md mt-10 text-[#3498db] hover:scale-110 duration-300 p-2 rounded-lg`}>
+                    <Link href="/projects">
+                        My Projects
+                    </Link>
+                </button>
             </div>
         </div>
     );

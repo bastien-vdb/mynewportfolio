@@ -3,14 +3,17 @@ import Link from "next/link";
 import ReorderIcon from "@material-ui/icons/Reorder";
 import Image from "next/image";
 import profilePicture from "/src/assets/profile.jpg";
+import { useRouter } from "next/navigation";
 
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
 
+  const router = useRouter();
+
   return (
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
       <div className="toggleButton">
-        <Image className="shadow-yellow-100 rounded-full w-14" src={profilePicture} alt="Profile Picture" width={100} height={100} />
+        <Image onClick={()=>router.push('/')} className="shadow-yellow-100 rounded-full w-8" src={profilePicture} alt="Profile Picture" width={100} height={100} />
         <button
           onClick={() => {
             setExpandNavbar((prev) => !prev);
