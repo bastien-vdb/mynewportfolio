@@ -59,6 +59,11 @@ dependencies:
     specifier: 5.0.4
     version: 5.0.4
 
+devDependencies:
+  '@types/aos':
+    specifier: ^3.0.4
+    version: 3.0.4
+
 packages:
 
   /@babel/code-frame@7.21.4:
@@ -742,6 +747,10 @@ packages:
     dependencies:
       tslib: 2.5.0
     dev: false
+
+  /@types/aos@3.0.4:
+    resolution: {integrity: sha512-mna6Jd6bdK1NpwarLopGvXOgUoCfj0470IwLxuVOFDElTGI0JTd7xSGQ0AjbAEnHErC/b3fA9t2uB3IXVKmckA==}
+    dev: true
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
