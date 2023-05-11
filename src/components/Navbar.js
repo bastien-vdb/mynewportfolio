@@ -4,7 +4,7 @@ import ReorderIcon from "@material-ui/icons/Reorder";
 import Image from "next/image";
 import profilePicture from "/src/assets/profile.jpg";
 import { useRouter } from "next/navigation";
-import Buttons from "./buttons";
+import Buttons from "./Buttons";
 
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
