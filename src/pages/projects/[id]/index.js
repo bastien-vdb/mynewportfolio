@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { ProjectList } from "../../../helpers/ProjectList";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -32,11 +33,5 @@ function ProjectDisplay() {
     </div>
   );
 }
-
-ProjectDisplay.getInitialProps = ({ query }) => {
-  const { id } = query;
-  const project = ProjectList[id];
-  return { project };
-};
 
 export default ProjectDisplay;
