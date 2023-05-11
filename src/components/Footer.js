@@ -6,7 +6,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <div className="footer">
-      <div className="socialMedia flex items-center justify-center">
+      <div data-aos="zoom-in" className="socialMedia flex items-center justify-center">
         <Link href="https://fr.linkedin.com/in/bastien-vermot-de-boisrolin-10051a72" passHref={true} target="_blank" rel="noopener noreferrer" className="hover:scale-110 duration-300">
           <LinkedInIcon />
         </Link>

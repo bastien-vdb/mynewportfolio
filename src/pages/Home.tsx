@@ -43,14 +43,14 @@ function HomePage() {
                 <title>Bastien VDB Portfolio</title>
                 <meta property="og:title" content="Bastien VDB Portfolio" />
                 <meta property="og:description" content="Bastien VDB Portfolio homepage" />
-                <meta property="og:image" content="/public/opengraph.jpg" />
+                <meta property="og:image" content="/opengraph.jpg" />
             </Head>
             <div className="about space-y-10">
                 <Image data-aos="fade-down" className="shadow-2xl shadow-yellow-100 rounded-full w-40" src={profilePicture} alt="Profile Picture" width={200} height={200} />
                 <h2 data-aos="fade-up"> Hi, I am Bastien</h2>
                 <div data-aos="fade-down" className="prompt space-y-10">
                     <p>A french software developer with a passion for learning and creating.</p>
-                    <div className="flex items-center justify-center">
+                    <div data-aos="zoom-in" className="flex items-center justify-center">
                         <Link href="https://fr.linkedin.com/in/bastien-vermot-de-boisrolin-10051a72" passHref={true} target="_blank" rel="noopener noreferrer" className="hover:scale-110 duration-300">
                             <LinkedInIcon />
                         </Link>
@@ -64,26 +64,26 @@ function HomePage() {
                 </div>
             </div>
             <div className="skills">
-                <h1> Skills</h1>
+                <h1 data-aos="zoom-in"> Skills</h1>
                 <ol className="list">
                     <li className="item">
-                        <h2> Front-End</h2>
-                        <span>
+                        <h2 data-aos="fade-up"> Front-End</h2>
+                        <span data-aos="fade-down">
                             ReactJS, NextJS, Server Component (SSR), UseQuery, SWR, Redux, HTML, CSS, NPM, BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents, Zustand, Zod
                         </span>
                     </li>
                     <li className="item">
-                        <h2>Back-End</h2>
-                        <span>
+                        <h2 data-aos="fade-up">Back-End</h2>
+                        <span data-aos="fade-down">
                             NodeJS, ExpressJS, GraphQL, MySQL, MongoDB, MS SQL
                         </span>
                     </li>
                     <li className="item">
-                        <h2>Languages</h2>
-                        <span>TypeScript, JavaScript, Python, ABAP</span>
+                        <h2 data-aos="fade-up">Languages</h2>
+                        <span data-aos="fade-down">TypeScript, JavaScript, Python, ABAP</span>
                     </li>
                 </ol>
-                <Link href="/projects" className="onBody">
+                <Link data-aos="zoom-in-down" href="/projects" className="mt-28">
                     <Buttons>
                         <span className="
                         text-yellow-500
@@ -96,7 +96,9 @@ function HomePage() {
                         p-3
                         px-6
                         rounded-xl
-                        hover:bg-transparent"
+                        hover:bg-transparent
+                        text-sm
+                        sm:text-lg"
                         >
                             See My Projects</span>
                     </Buttons>

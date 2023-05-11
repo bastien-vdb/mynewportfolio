@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
-      <div className="toggleButton">
+      <div data-aos="zoom-in" className="toggleButton">
         <Image onClick={() => router.push("/")} className="shadow-yellow-100 rounded-full w-8" src={profilePicture} alt="Profile Picture" width={100} height={100} />
         <button
           onClick={() => {
@@ -24,23 +24,23 @@ function Navbar() {
         </button>
       </div>
       <div className="flex flex-col justify-center items-center sm:flex-row sm:justify-start sm:items-start px-6">
-        <Link className="hidden sm:block" href={"/"}>
+        <Link data-aos="fade-up" className="hidden sm:block" href={"/"}>
           <Image className="shadow-yellow-100 rounded-full w-14" src={profilePicture} alt="Profile Picture" width={200} height={200} />
         </Link>
         <div className="links">
           <Link onClick={() => setExpandNavbar(() => false)} href="/">
             <Buttons>
-              <span>Home</span>
+              <span data-aos="zoom-in">Home</span>
             </Buttons>
           </Link>
           <Link onClick={() => setExpandNavbar(() => false)} href="/projects">
             <Buttons>
-              <span>Projects</span>
+              <span data-aos="zoom-in">Projects</span>
             </Buttons>
           </Link>
           <Link onClick={() => setExpandNavbar(() => false)} href="/experience">
             <Buttons>
-              <span>Experience</span>
+              <span data-aos="zoom-in">Experience</span>
             </Buttons>
           </Link>
         </div>

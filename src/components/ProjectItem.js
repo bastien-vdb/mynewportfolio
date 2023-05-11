@@ -1,14 +1,14 @@
 import React from "react";
-import {useRouter} from "next/navigation";
+import { useRouter } from "next/navigation";
 
 function ProjectItem({ image, name, id }) {
-
   const router = useRouter();
   return (
     <div
+      data-aos="fade-up"
       className="projectItem"
       onClick={() => {
-        router.push(`/projects/${id}`)
+        router.push(`/projects/${id}`);
       }}
     >
       <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
