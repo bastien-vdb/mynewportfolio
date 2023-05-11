@@ -8,7 +8,7 @@ import Link from "next/link";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Head from "next/head";
-import Buttons from '../components/buttons';
+import Buttons from '../components/Buttons';
 
 function HomePage() {
 
