@@ -12,7 +12,7 @@ function Projects() {
         <meta property="og:description" content="Bastien Deboisrolin projects" />
         <meta property="og:image" content="/opengraph.jpg" />
       </Head>
-      <div className="projectList">
+      <div data-aos="fade-up" className="projectList">
         {ProjectList.map((project, idx) => {
           return <ProjectItem key={idx} id={idx} name={project.name} image={project.image.src} />;
         })}

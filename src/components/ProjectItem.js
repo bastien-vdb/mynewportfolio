@@ -5,7 +5,6 @@ function ProjectItem({ image, name, id }) {
   const router = useRouter();
   return (
     <div
-      data-aos="fade-up"
       className="projectItem"
       onClick={() => {
         router.push(`/projects/${id}`);
