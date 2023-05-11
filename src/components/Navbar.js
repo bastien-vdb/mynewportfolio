@@ -4,6 +4,7 @@ import ReorderIcon from "@material-ui/icons/Reorder";
 import Image from "next/image";
 import profilePicture from "/src/assets/profile.jpg";
 import { useRouter } from "next/navigation";
+import Buttons from "./buttons";
 
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
@@ -13,7 +14,7 @@ function Navbar() {
   return (
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
       <div className="toggleButton">
-        <Image onClick={()=>router.push('/')} className="shadow-yellow-100 rounded-full w-8" src={profilePicture} alt="Profile Picture" width={100} height={100} />
+        <Image onClick={() => router.push("/")} className="shadow-yellow-100 rounded-full w-8" src={profilePicture} alt="Profile Picture" width={100} height={100} />
         <button
           onClick={() => {
             setExpandNavbar((prev) => !prev);
@@ -27,14 +28,20 @@ function Navbar() {
           <Image className="shadow-yellow-100 rounded-full w-14" src={profilePicture} alt="Profile Picture" width={200} height={200} />
         </Link>
         <div className="links">
-          <Link onClick={()=>setExpandNavbar(()=>false)} className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/">
-            Home
+          <Link onClick={() => setExpandNavbar(() => false)} href="/">
+            <Buttons>
+              <span>Home</span>
+            </Buttons>
           </Link>
-          <Link onClick={()=>setExpandNavbar(()=>false)} className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/projects">
-            Projects
+          <Link onClick={() => setExpandNavbar(() => false)} href="/projects">
+            <Buttons>
+              <span>Projects</span>
+            </Buttons>
           </Link>
-          <Link onClick={()=>setExpandNavbar(()=>false)} className="hover:text-2xl hover:border-1 shadow hover:bg-[#f1c40f] duration-300 hover:text-[#2980b9] hover:rounded-xl hover:border-yellow-200  duration-100 p-3" href="/experience">
-            Experience
+          <Link onClick={() => setExpandNavbar(() => false)} href="/experience">
+            <Buttons>
+              <span>Experience</span>
+            </Buttons>
           </Link>
         </div>
       </div>

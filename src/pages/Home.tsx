@@ -8,6 +8,7 @@ import Link from "next/link";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Head from "next/head";
+import Buttons from '../components/buttons';
 
 function HomePage() {
 
@@ -39,15 +40,15 @@ function HomePage() {
     return (
         <div className="home">
             <Head>
-                <title>My Page Title</title>
+                <title>Bastien VDB Portfolio</title>
                 <meta property="og:title" content="Bastien VDB Portfolio" />
                 <meta property="og:description" content="Bastien VDB Portfolio homepage" />
-                <meta property="og:image" content="https://example.com/my-image.jpg" />
+                <meta property="og:image" content="/public/opengraph.jpg" />
             </Head>
             <div className="about space-y-10">
                 <Image data-aos="fade-down" className="shadow-2xl shadow-yellow-100 rounded-full w-40" src={profilePicture} alt="Profile Picture" width={200} height={200} />
-                <h2 data-aos="fade-left"> Hi, I am Bastien</h2>
-                <div data-aos="fade-right" className="prompt space-y-10">
+                <h2 data-aos="fade-up"> Hi, I am Bastien</h2>
+                <div data-aos="fade-down" className="prompt space-y-10">
                     <p>A french software developer with a passion for learning and creating.</p>
                     <div className="flex items-center justify-center">
                         <Link href="https://fr.linkedin.com/in/bastien-vermot-de-boisrolin-10051a72" passHref={true} target="_blank" rel="noopener noreferrer" className="hover:scale-110 duration-300">
@@ -82,11 +83,24 @@ function HomePage() {
                         <span>TypeScript, JavaScript, Python, ABAP</span>
                     </li>
                 </ol>
-                <button className={`bg-[#f1c40f] font-bold text-md mt-10 text-[#3498db] hover:scale-110 duration-300 p-2 rounded-lg`}>
-                    <Link href="/projects">
-                        My Projects
-                    </Link>
-                </button>
+                <Link href="/projects" className="onBody">
+                    <Buttons>
+                        <span className="
+                        text-yellow-500
+                        hover:text-blue-500
+                        font-bold 
+                        animate-pulse
+                        shadow shadow-xl
+                        hover: shadow-none
+                        bg-sky-600
+                        p-3
+                        px-6
+                        rounded-xl
+                        hover:bg-transparent"
+                        >
+                            See My Projects</span>
+                    </Buttons>
+                </Link>
             </div>
         </div>
     );
