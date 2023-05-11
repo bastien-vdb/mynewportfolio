@@ -41,9 +41,23 @@ function HomePage() {
         <div className="home">
             <Head>
                 <title>Bastien VDB Portfolio</title>
+                <meta name="description" content="Bastien Vermot de boirolin Portfolio homepage" />
+
+                {/* <!-- Facebook Meta Tags --> */}
+                <meta property="og:url" content="https://bastiendeboisrolin.info" />
+                <meta property="og:type" content="website" />
                 <meta property="og:title" content="Bastien VDB Portfolio" />
-                <meta property="og:description" content="Bastien VDB Portfolio homepage" />
-                <meta property="og:image" content="/opengraph.jpg" />
+                <meta property="og:description" content="Bastien Vermot de boirolin Portfolio homepage" />
+                <meta property="og:image" content="https://bastiendeboisrolin.info/opengraph.jpg" />
+
+                {/* <!-- Twitter Meta Tags --/> */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="bastiendeboisrolin.info" />
+                <meta property="twitter:url" content="https://bastiendeboisrolin.info" />
+                <meta name="twitter:title" content="Bastien VDB Portfolio" />
+                <meta name="twitter:description" content="Bastien Vermot de boirolin Portfolio homepage" />
+                <meta name="twitter:image" content="https://bastiendeboisrolin.info/opengraph.jpg" />
+
             </Head>
             <div className="about space-y-10">
                 <Image data-aos="fade-down" className="shadow-2xl shadow-yellow-100 rounded-full w-40" src={profilePicture} alt="Profile Picture" width={200} height={200} />

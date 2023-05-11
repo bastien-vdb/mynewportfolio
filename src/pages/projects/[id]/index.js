@@ -33,4 +33,10 @@ function ProjectDisplay() {
   );
 }
 
+ProjectDisplay.getInitialProps = ({ query }) => {
+  const { id } = query;
+  const project = ProjectList[id];
+  return { project };
+};
+
 export default ProjectDisplay;
