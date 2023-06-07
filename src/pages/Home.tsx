@@ -63,7 +63,7 @@ function HomePage() {
                 <Image data-aos="fade-down" className="shadow-2xl shadow-yellow-100 rounded-full w-40" src={profilePicture} alt="Profile Picture" width={200} height={200} />
                 <h2 data-aos="fade-up"> Hi, I am Bastien</h2>
                 <div data-aos="fade-down" className="prompt space-y-10">
-                    <p>A french software developer with a passion for learning and creating.</p>
+                    <p>A french software developer with a passion for learning and creating. After 7 years in Accenture working for L'Oreal, Safran and GDF Suez, I decided to become a freelancer and deliver modern, reactive and with less friction as possible, react front end interfaces with all the ecosystem</p>
                     <div data-aos="zoom-in" className="flex items-center justify-center">
                         <Link href="https://fr.linkedin.com/in/bastien-vermot-de-boisrolin-10051a72" passHref={true} target="_blank" rel="noopener noreferrer" className="hover:scale-110 duration-300">
                             <LinkedInIcon />
