@@ -1,7 +1,6 @@
 import React from "react";
 import { ProjectList } from "../../../helpers/ProjectList";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";

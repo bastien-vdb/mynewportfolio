@@ -8,7 +8,7 @@ export const ProjectList = [
     name: "Finest Lash Studio",
     image: Proj1,
     skills: "React, NextJS, Stripe API, SEO, Google Analytics",
-    link: "https://finest-lash-studio.vercel.app/",
+    link: "https://www.finestlash.studio/",
     git:"https://github.com/bastien-vdb/FinestLash_studio"
   },
   {
